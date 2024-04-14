@@ -21,6 +21,21 @@ int WINAPI WinMain(HINSTANCE hINSTANCE, HINSTANCE hPrevInstance, PSTR lpCmdLine,
 
 	// Create the window
 
+	HWND hwnd = CreateWindowEx(
+		0, // optional window styles
+		CLASS_NAME, // class
+		L"Learn to Program Windows", // text
+		WS_OVERLAPPEDWINDOW, // style
+
+		// Size and position
+		CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
+
+		NULL, // parent
+		NULL, // menu
+		hInstance, // instance handle
+		NULL // additional app data
+	);
+
 	return 0;
 }
 
