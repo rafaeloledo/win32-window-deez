@@ -16,6 +16,7 @@ int WINAPI WinMain(HINSTANCE hINSTANCE, HINSTANCE hPrevInstance, PSTR lpCmdLine,
 	// long pointer to function
 	wc.lpfnWndProc = WindowProc;
 	wc.hInstance = hInstance;
+	// long pointer to string zero terminated
 	wc.lpszClassName = CLASS_NAME;
 
 	RegisterClass(&wc);
