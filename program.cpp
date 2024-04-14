@@ -36,6 +36,14 @@ int WINAPI WinMain(HINSTANCE hINSTANCE, HINSTANCE hPrevInstance, PSTR lpCmdLine,
 		NULL // additional app data
 	);
 
+	if (hwnd == NULL) return 0;
+
+	ShowWindow(hwnd, nCmdShow);
+
+	// Run the message loop
+
+	
+
 	return 0;
 }
 
