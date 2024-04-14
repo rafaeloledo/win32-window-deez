@@ -13,7 +13,8 @@ int WINAPI WinMain(HINSTANCE hINSTANCE, HINSTANCE hPrevInstance, PSTR lpCmdLine,
 
 	WNDCLASS wc = {};
 
-	wc.lpfWndProc = WindowProc;
+	// long pointer to function
+	wc.lpfnWndProc = WindowProc;
 	wc.hInstance = hInstance;
 	wc.lpszClassName = CLASS_NAME;
 
